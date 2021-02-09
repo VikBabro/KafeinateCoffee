@@ -15,45 +15,57 @@
 }
 
 
+@font-face {
+    font-family: "Economica-Regular";
+    src: url("../fonts/economica/Economica-Regular.woff2") format("woff2"),
+    url("../fonts/economica/Economica-Regular.woff") format("woff"),
+    url("../fonts/economica/Economica-Regular.ttf") format("ttf");
+    font-display: swap;
+}
+
+
 .intro {
     background-image: url("../media/images/home/backgroung-home.jpg");
     background-size: cover;
     height: 100vh;
-    background-position: center bottom;
+    background-position: right bottom;
 }
 
 .header {
-        padding: 49px 91px 51px 0;
-        background-color: #101311;
-        position: relative;
+        background-color: #131313;
+        
 }
 
-.header .wrapper {
+ .header .wrapper {
+    position: relative;
     display: flex;
     justify-content: flex-end;
-    height: 20px;
+    align-items: center;
+    padding-top: 49px;
+    padding-bottom: 51px;   
+  
 }
 
 .logo {
     position: absolute;
-    left: 397px;
+    left: 76px;
     top: 7px;
     height: 156px;
     width: 156px;
     background-image: url("../media/images/header/logo-2.jpg");
     background-size: cover;
     background-position: center;
-    overflow: hidden;
-    white-space: nowrap;
-    border: solid;
-    border-color:#131313;
-    border-width: 15px;
+    border: solid #131313 15px;
     border-radius: 50%;
+}
+
+
+.nav-buy {
+    margin-right: 63px;
 }
 
 .nav {
     display: flex;
-    flex-wrap: wrap;
 }
 
  .nav ul {
@@ -72,24 +84,35 @@
     color: white;
 }
 
+.wrapper a:hover {
+   color: #faca36;
+}
+
+
 .nav li a  {
 color: white;
 text-decoration: none;  
   
 }
 
+.nav-buy {
+    display: flex;
+}
+
 .buy-search svg {
     fill: white;
     width: 23px;
     height: 21px;
-    margin-right    : 13px;
+    margin-right: 13px;
 }
 
+.buy-search svg:hover {
+    fill: #facb36;
+ }
 h1 {
     font-family: "Economica-Bold", sans-serif;
     color: #faca36;
     font-size: 70px;
-    line-height: 40px;
     letter-spacing: 0.7px;
     margin: 0;
 }
@@ -102,8 +125,8 @@ h1 {
 
 .home-wrapper {
     width: 516px;
-    margin-right: 50px;
-    margin-top: 197px;
+    margin-right: 6vh;
+    margin-top: 20vh;
 
 }
 
@@ -117,13 +140,13 @@ h1 {
 .button-intro {
     width: 191px;
     height: 41px;
-    padding: 0;
+    padding: 9px 46px;
     border: solid 2px #facb36;
     background-color: transparent;
     border-radius: 4px;
 }
 
-.button-intro a {
+.button-intro {
     font-family: "Quicksand-Regular", sans-serif;  
     font-size: 20px;
     line-height: 2;
@@ -136,9 +159,10 @@ h1 {
 
 .button-intro:hover {
     background-color: #faca36;
+    color: white;
 }
 
-.button-intro:hover a {
+.button-intro :hover  {
     color: white;
 }
 
@@ -157,7 +181,7 @@ h1 {
 .service-item {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    padding-top: 51px;
 }
 
 .positions:nth-of-type(even) {
@@ -214,3 +238,172 @@ h1 {
     border-color: #d1d1d1;
 }
 
+.menu-section .wrapper {
+    display: flex;
+    padding: 0;
+}
+
+.menu {
+    width: 818px;
+    background-color: #131313;
+    padding-top: 100px;
+    padding-bottom: 145px;
+}
+
+.menu h6 {
+    font-family: "Economica-Regular", sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    color: #faca36;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+aside {
+    width: 446px;
+    background-image: url("../media/images/menu/background-menu.jpg");
+}
+
+.buttons-menu {
+    display: flex;
+    justify-content: center;
+		 margin-bottom: 33px;
+
+}
+
+.buttons-menu button {
+   width: 191px;
+   padding-top: 18px;
+   padding-bottom: 18px;
+   margin-bottom: 33px;
+   border-radius: 4px;
+   line-height: 0;
+   border: solid 2px #facb36;
+   background-color: transparent;
+   font-family: "Quicksand-Regular", sans-serif;  
+   font-size: 20px;
+   line-height: 0.9px;
+   color: #faca36;
+   margin: 0;
+   text-decoration: none;
+}
+
+/* .buttons-menu button a {
+    font-family: "Quicksand-Regular", sans-serif;  
+    font-size: 20px;
+    line-height: 0.9px;
+    color: #faca36;
+    margin: 0;
+    text-decoration: none;
+} */
+
+.buttons-menu button:hover{
+    background-color: #facb36;
+    color: white;
+
+    }
+
+
+
+
+.buttons-menu button:nth-child(2) {
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+
+/* *****menu-tab
+b-tab {
+    border: 1px solid #000;
+    display: none;
+  }
+  
+  .b-tab.active {
+    display: block;
+  }
+  
+  .b-nav-tab {
+    display: inline-block;
+  }
+  
+  .b-nav-tab.active {
+    color: #ff4200;
+  }
+
+  .position-menu {
+      border: indianred solid 3px;
+  }
+
+
+  end**** */
+
+.position-menu-item {
+    width: 286px;
+    border-top: solid 2px #facb36;
+    border-bottom: solid 2px #facb36;
+}
+
+.position-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.position-menu-item {
+    padding-top: 9px;
+    padding-bottom: 1px;
+
+}
+
+.position-menu-item:nth-child(3) {
+    border: none;
+}
+.position-menu-item:nth-child(4) {
+    border: none;
+}
+
+.position-menu-item .name {
+    display: inline-block;
+
+    font-family: "Economica-Regular", sans-serif;
+    font-size: 34px;
+    letter-spacing: 0.34px;
+    color: #ffeeb7;
+
+
+}
+.position-menu-item .price {
+    display: inline-block;
+
+    font-family: "Economica-Regular", sans-serif;
+    font-size: 34px;
+    letter-spacing: 0.34px;
+    color: #ffeeb7;
+}
+
+
+
+
+.position-menu-item .descr {
+    display: inline-block;
+    margin: 0;
+    font-family: "Quicksand-Regular", sans-serif;  
+    font-size: 16px;
+    color: #a9a8a6;
+    text-align: left;
+
+
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-aside {
+    display: flex;
+    justify-content: center;
+
+}

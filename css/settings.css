@@ -244,10 +244,13 @@ h1 {
 }
 
 .menu {
-    width: 818px;
+    width: 635px;
     background-color: #131313;
     padding-top: 100px;
-    padding-bottom: 145px;
+    padding-right: 99px;
+    padding-left: 99px;
+    padding-bottom: 52px;
+
 }
 
 .menu h6 {
@@ -257,6 +260,7 @@ h1 {
     color: #faca36;
     text-align: center;
     margin-bottom: 8px;
+    margin-top: 0;
 }
 
 aside {
@@ -287,6 +291,13 @@ aside {
    margin: 0;
    text-decoration: none;
 }
+
+.buttons-menu .active {
+    background-color: #facb36;
+    border: solid 2px #facb36;
+    color: #fff;
+    
+  }
 
 /* .buttons-menu button a {
     font-family: "Quicksand-Regular", sans-serif;  
@@ -338,23 +349,58 @@ b-tab {
 
   end**** */
 
+  .active {
+    color: #ff4200;
+    
+  }
+
 .position-menu-item {
     width: 286px;
-    border-top: solid 2px #facb36;
-    border-bottom: solid 2px #facb36;
+    border-top: solid 2px #675956;
+    border-bottom: solid 2px #675956;
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
 }
 
 .position-menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    display: none;
 }
 
-.position-menu-item {
-    padding-top: 9px;
-    padding-bottom: 1px;
+.position-menu.active {
+    display: flex;
+    
+}
+
+
+.position-menu-item svg {
+    display: block ;
+    width: 43px;
+    height: 29px;
+    margin-bottom: 0;
+    margin-right: 5px;
 
 }
+
+
+.position-menu-item .country-flag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.descr-like {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+
 
 .position-menu-item:nth-child(3) {
     border: none;
@@ -365,21 +411,23 @@ b-tab {
 
 .position-menu-item .name {
     display: inline-block;
-
     font-family: "Economica-Regular", sans-serif;
     font-size: 34px;
     letter-spacing: 0.34px;
     color: #ffeeb7;
+    margin: 0;
 
 
 }
 .position-menu-item .price {
     display: inline-block;
-
     font-family: "Economica-Regular", sans-serif;
     font-size: 34px;
     letter-spacing: 0.34px;
     color: #ffeeb7;
+    margin-bottom: 0;
+    margin-top: 0;
+
 }
 
 
@@ -387,13 +435,39 @@ b-tab {
 
 .position-menu-item .descr {
     display: inline-block;
-    margin: 0;
     font-family: "Quicksand-Regular", sans-serif;  
     font-size: 16px;
     color: #a9a8a6;
     text-align: left;
+    margin-bottom: 0;
+
+}
+
+.view-all {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 18px;
+    margin-top: 31px;
+}   
 
 
+.view-all-text {
+    display: inline-block;
+    font-family: "Quicksand-Regular", sans-serif;  
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #faca36;
+    margin-right: 9px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.view-all svg {
+    width: 10px;
+    height: 17px;
+    fill: #faca36;
 }
 
 aside {
@@ -406,4 +480,70 @@ aside {
     display: flex;
     justify-content: center;
 
+}
+
+
+/*****OUR SPECIAL THINGS*****/
+
+
+
+.our-special-things .wrapper {
+    background-color: #f4f4f4;
+    padding-top: 99px;
+
+}
+
+.our-special-things h6 {
+    margin-top: 0;
+    font-family: "Economica-Regular", sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    color: #dd991d;
+    text-align: center;
+    margin-bottom: 27px;
+
+}
+
+
+.our-special-things-text {
+    font-family: "Quicksand-Regular", sans-serif;  
+
+}
+
+
+.gallery-wrapper {
+    width: 1080px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+
+}
+
+.gallery-img  {
+    width: 541px;
+    overflow: hidden;
+}
+
+.gallery-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 105px;
+    padding-right: 93px;
+    padding-bottom: 105px;
+    padding-left: 93px;
+}
+
+.gallery-name {
+    font-family: "Economica-Regular", sans-serif;
+    font-size: 34px;
+    letter-spacing: 0.34px;
+    text-align: left;
+    color: #e3b359;
+
+
+}
+
+
+.gallery-text-descr {
+    display: inline-block;
 }

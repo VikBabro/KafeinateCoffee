@@ -23,17 +23,16 @@
     font-display: swap;
 }
 
-
+/***HEADER-NAV-INTRO***/
 .intro {
-    background-image: url("../media/images/home/backgroung-home.jpg");
-    background-size: cover;
-    height: 100vh;
-    background-position: right bottom;
+  /* width: 300vw;
+  display: flex;
+  transition: all 300ms ease 0s; */
+  overflow: hidden;
 }
 
 .header {
         background-color: #131313;
-        
 }
 
  .header .wrapper {
@@ -47,6 +46,7 @@
 }
 
 .logo {
+    z-index: 2;
     position: absolute;
     left: 76px;
     top: 7px;
@@ -68,7 +68,7 @@
     display: flex;
 }
 
- .nav ul {
+.nav ul {
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -90,9 +90,8 @@
 
 
 .nav li a  {
-color: white;
-text-decoration: none;  
-  
+	color: white;
+	text-decoration: none;  
 }
 
 .nav-buy {
@@ -109,6 +108,7 @@ text-decoration: none;
 .buy-search svg:hover {
     fill: #facb36;
  }
+ 
 h1 {
     font-family: "Economica-Bold", sans-serif;
     color: #faca36;
@@ -121,6 +121,14 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+}
+.wr-home{
+    background-size: cover;
+    background-position: right bottom;
+    background-image: url("../media/images/home/backgroung-home.jpg");
+height: calc(100vh - 125px);
+width: 100vw;
 }
 
 .home-wrapper {
@@ -154,7 +162,6 @@ h1 {
     color: #faca36;
     margin: 0;
     text-decoration: none;
-
 }
 
 .button-intro:hover {
@@ -165,16 +172,40 @@ h1 {
 .button-intro :hover  {
     color: white;
 }
+.pagination{
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+}
+.pagination-page{
+transition: all 300ms ease 0s;
+  
+        width: 16px;
+        height: 16px;
+        border: 2px solid #86a4d5;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    
+}
+.pagination-page.active{
+    background-color: white;
+}
+.intro-slider{
+    width: 300vw;
+display: flex;
+transition: all 300ms ease 0s;
+}
 
+/***END-HEADER-NAV-INTRO***/
 
 .our-services  .wrapper {
-    height: 766px;
     padding-top: 109px;
     padding-left: 126px;
     padding-right: 126px;
     background-color: #f4f4f4;
-    
-
 }
 
 
@@ -201,8 +232,6 @@ h1 {
     border-radius: 50%;
     border: 7px solid;
     border-color: #e6e6e6;
-    
-
 }
 
 .item-image {
@@ -213,8 +242,7 @@ h1 {
     background-size: cover;
     border-radius: 50%;
     border: 7px solid;
-    border-color: #d1d1d1;
-    
+    border-color: #d1d1d1; 
 }
 
 .item-image-second {
@@ -250,7 +278,6 @@ h1 {
     padding-right: 99px;
     padding-left: 99px;
     padding-bottom: 52px;
-
 }
 
 .menu h6 {
@@ -320,39 +347,7 @@ aside {
 .buttons-menu button:nth-child(2) {
     margin-left: 15px;
     margin-right: 15px;
-
 }
-
-
-/* *****menu-tab
-b-tab {
-    border: 1px solid #000;
-    display: none;
-  }
-  
-  .b-tab.active {
-    display: block;
-  }
-  
-  .b-nav-tab {
-    display: inline-block;
-  }
-  
-  .b-nav-tab.active {
-    color: #ff4200;
-  }
-
-  .position-menu {
-      border: indianred solid 3px;
-  }
-
-
-  end**** */
-
-  .active {
-    color: #ff4200;
-    
-  }
 
 .position-menu-item {
     width: 286px;
@@ -361,7 +356,6 @@ b-tab {
     margin-bottom: 0;
     padding-top: 25px;
     padding-bottom: 25px;
-
 }
 
 .position-menu {
@@ -373,7 +367,6 @@ b-tab {
 
 .position-menu.active {
     display: flex;
-    
 }
 
 
@@ -383,7 +376,6 @@ b-tab {
     height: 29px;
     margin-bottom: 0;
     margin-right: 5px;
-
 }
 
 
@@ -399,9 +391,15 @@ b-tab {
     display: flex;
     align-items: center;
 }
-
-
-
+.descr-like.active svg{
+    fill: red;
+}
+.descr-like svg{
+    fill: grey;
+}
+.count-hearts{
+    color: white;
+}
 .position-menu-item:nth-child(3) {
     border: none;
 }
@@ -416,8 +414,6 @@ b-tab {
     letter-spacing: 0.34px;
     color: #ffeeb7;
     margin: 0;
-
-
 }
 .position-menu-item .price {
     display: inline-block;
@@ -427,11 +423,7 @@ b-tab {
     color: #ffeeb7;
     margin-bottom: 0;
     margin-top: 0;
-
 }
-
-
-
 
 .position-menu-item .descr {
     display: inline-block;
@@ -440,7 +432,6 @@ b-tab {
     color: #a9a8a6;
     text-align: left;
     margin-bottom: 0;
-
 }
 
 .view-all {
@@ -488,8 +479,12 @@ aside {
 
 
 .our-special-things .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #f4f4f4;
     padding-top: 99px;
+    padding-bottom: 99px;
 
 }
 
@@ -515,24 +510,35 @@ aside {
     width: 1080px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     background-color: #ffffff;
 
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .gallery-img  {
     width: 541px;
     overflow: hidden;
 }
-
+.gallery-img img{
+   width: 100%;
+   height: 100%;
+}
 .gallery-text {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    padding-top: 105px;
-    padding-right: 93px;
-    padding-bottom: 105px;
-    padding-left: 93px;
+    justify-content: center;
+    align-items: center;
 }
-
+.gallery-text p{
+    width: 355px;
+}
 .gallery-name {
     font-family: "Economica-Regular", sans-serif;
     font-size: 34px;
@@ -546,4 +552,19 @@ aside {
 
 .gallery-text-descr {
     display: inline-block;
+}
+
+
+.all-about-beans {
+    display: flex;
+    justify-content: flex-start;
+    background-image: url("../media/images/special-things/arabica-cup.jpg");
+background-repeat: no-repeat;
+background-position: top right;
+background-color: #131313;
+}
+
+
+.about-beans .wrapper {
+    padding: 0;
 }

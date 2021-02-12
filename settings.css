@@ -1,0 +1,628 @@
+@font-face {
+    font-family: "Quicksand-Regular";
+    src: url("../fonts/quicksand/Quicksand-Regular.woff2") format("woff2"),
+    url("../fonts/quicksand/Quicksand-Regular.woff") format("woff"),
+    url("../fonts/quicksand/Quicksand-Regular.ttf") format("ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Economica-Bold";
+    src: url("../fonts/economica/Economica-Bold.woff2") format("woff2"),
+    url("../fonts/economica/Economica-Bold.woff") format("woff"),
+    url("../fonts/quicksand/Quicksand-Regular.ttf") format("ttf");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Economica-Regular";
+    src: url("../fonts/economica/Economica-Regular.woff2") format("woff2"),
+    url("../fonts/economica/Economica-Regular.woff") format("woff"),
+    url("../fonts/economica/Economica-Regular.ttf") format("ttf");
+    font-display: swap;
+}
+
+/***HEADER-NAV-INTRO***/
+.intro {
+  /* width: 300vw;
+  display: flex;
+  transition: all 300ms ease 0s; */
+  overflow: hidden;
+}
+
+.header {
+        background-color: #131313;
+}
+
+ .header .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 49px;
+    padding-bottom: 51px;   
+  
+}
+
+.logo {
+    z-index: 2;
+    position: absolute;
+    left: 76px;
+    top: 7px;
+    height: 156px;
+    width: 156px;
+    background-image: url("../media/images/header/logo-2.jpg");
+    background-size: cover;
+    background-position: center;
+    border: solid #131313 15px;
+    border-radius: 50%;
+}
+
+
+.nav-buy {
+    margin-right: 63px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    list-style: none; 
+    margin-right: 22px;
+    font-family: "Quicksand-Regular", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.wrapper a:hover {
+   color: #faca36;
+}
+
+
+.nav li a  {
+	color: white;
+	text-decoration: none;  
+}
+
+.nav-buy {
+    display: flex;
+}
+
+.buy-search svg {
+    fill: white;
+    width: 23px;
+    height: 21px;
+    margin-right: 13px;
+}
+
+.buy-search svg:hover {
+    fill: #facb36;
+ }
+ 
+h1 {
+    font-family: "Economica-Bold", sans-serif;
+    color: #faca36;
+    font-size: 70px;
+    letter-spacing: 0.7px;
+    margin: 0;
+}
+
+.wr-home .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+.wr-home{
+    background-size: cover;
+    background-position: right bottom;
+    background-image: url("../media/images/home/backgroung-home.jpg");
+height: calc(100vh - 125px);
+width: 100vw;
+}
+
+.home-wrapper {
+    width: 516px;
+    margin-right: 6vh;
+    margin-top: 20vh;
+
+}
+
+.info-text {
+    font-family: "Quicksand-Regular", sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    color: white;
+}
+
+.button-intro {
+    width: 191px;
+    height: 41px;
+    padding: 9px 46px;
+    border: solid 2px #facb36;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.button-intro {
+    font-family: "Quicksand-Regular", sans-serif;  
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 0.2px;
+    color: #faca36;
+    margin: 0;
+    text-decoration: none;
+}
+
+.button-intro:hover {
+    background-color: #faca36;
+    color: white;
+}
+
+.button-intro :hover  {
+    color: white;
+}
+.pagination{
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+}
+.pagination-page{
+transition: all 300ms ease 0s;
+  
+        width: 16px;
+        height: 16px;
+        border: 2px solid #86a4d5;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    
+}
+.pagination-page.active{
+    background-color: white;
+}
+.intro-slider{
+    width: 300vw;
+display: flex;
+transition: all 300ms ease 0s;
+}
+
+/***END-HEADER-NAV-INTRO***/
+
+.our-services  .wrapper {
+    padding-top: 109px;
+    padding-left: 126px;
+    padding-right: 126px;
+    background-color: #f4f4f4;
+}
+
+
+.service-item {
+    display: flex;
+    justify-content: center;
+    padding-top: 51px;
+}
+
+.positions:nth-of-type(even) {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+
+.positions {
+    width: 280px;
+    height: 401px;
+}
+
+.item-border {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    border: 7px solid;
+    border-color: #e6e6e6;
+}
+
+.item-image {
+    width: 241px;
+    height: 241px;
+    overflow: hidden;
+    background-image: url("../media/images/our-profucts/coffee-beans.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border: 7px solid;
+    border-color: #d1d1d1; 
+}
+
+.item-image-second {
+    width: 241px;
+    height: 241px;
+    overflow: hidden;
+    background-image: url("../media/images/our-profucts/coffee-cup.jpg");
+    border-radius: 50%;
+    border: 7px solid;
+    border-color: #d1d1d1;
+}
+
+.item-image-third {
+    width: 241px;
+    height: 241px;
+    overflow: hidden;
+    background-image: url("../media/images/our-profucts/toast.jpg");
+    background-position-x: 27%;
+    border-radius: 50%;
+    border: 7px solid;
+    border-color: #d1d1d1;
+}
+
+.menu-section .wrapper {
+    display: flex;
+    padding: 0;
+}
+
+.menu {
+    width: 635px;
+    background-color: #131313;
+    padding-top: 100px;
+    padding-right: 99px;
+    padding-left: 99px;
+    padding-bottom: 52px;
+}
+
+.menu h6 {
+    font-family: "Economica-Regular", sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    color: #faca36;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+aside {
+    width: 446px;
+    background-image: url("../media/images/menu/background-menu.jpg");
+}
+
+.buttons-menu {
+    display: flex;
+    justify-content: center;
+		 margin-bottom: 33px;
+
+}
+
+.buttons-menu button {
+   width: 191px;
+   padding-top: 18px;
+   padding-bottom: 18px;
+   margin-bottom: 33px;
+   border-radius: 4px;
+   line-height: 0;
+   border: solid 2px #facb36;
+   background-color: transparent;
+   font-family: "Quicksand-Regular", sans-serif;  
+   font-size: 20px;
+   line-height: 0.9px;
+   color: #faca36;
+   margin: 0;
+   text-decoration: none;
+}
+
+.buttons-menu .active {
+    background-color: #facb36;
+    border: solid 2px #facb36;
+    color: #fff;
+    
+  }
+
+/* .buttons-menu button a {
+    font-family: "Quicksand-Regular", sans-serif;  
+    font-size: 20px;
+    line-height: 0.9px;
+    color: #faca36;
+    margin: 0;
+    text-decoration: none;
+} */
+
+.buttons-menu button:hover{
+    background-color: #facb36;
+    color: white;
+
+    }
+
+
+
+
+.buttons-menu button:nth-child(even) {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.position-menu-item {
+    width: 286px;
+    border-top: solid 2px #675956;
+    border-bottom: solid 2px #675956;
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.position-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: none;
+}
+
+.position-menu.active {
+    display: flex;
+}
+
+
+.position-menu-item svg {
+    display: block ;
+    width: 43px;
+    height: 29px;
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+
+.position-menu-item .country-flag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.descr-like {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.descr-like.active svg{
+    fill: red;
+}
+.descr-like svg{
+    fill: grey;
+}
+.count-hearts{
+    color: white;
+}
+.position-menu-item:nth-child(3) {
+    border: none;
+}
+.position-menu-item:nth-child(4) {
+    border: none;
+}
+
+.position-menu-item .name {
+    display: inline-block;
+    font-family: "Economica-Regular", sans-serif;
+    font-size: 34px;
+    letter-spacing: 0.34px;
+    color: #ffeeb7;
+    margin: 0;
+}
+.position-menu-item .price {
+    display: inline-block;
+    font-family: "Economica-Regular", sans-serif;
+    font-size: 34px;
+    letter-spacing: 0.34px;
+    color: #ffeeb7;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.position-menu-item .descr {
+    display: inline-block;
+    font-family: "Quicksand-Regular", sans-serif;  
+    font-size: 16px;
+    color: #a9a8a6;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.view-all {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 18px;
+    margin-top: 31px;
+}   
+
+
+.view-all-text {
+    display: inline-block;
+    font-family: "Quicksand-Regular", sans-serif;  
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #faca36;
+    margin-right: 9px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.view-all svg {
+    width: 10px;
+    height: 17px;
+    fill: #faca36;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-aside {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/*****OUR SPECIAL THINGS*****/
+
+
+
+.our-special-things .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding-top: 99px;
+    padding-bottom: 99px;
+
+}
+
+.our-special-things h6 {
+    margin-top: 0;
+    font-family: "Economica-Regular", sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    color: #dd991d;
+    text-align: center;
+    margin-bottom: 27px;
+
+}
+
+
+.our-special-things-text {
+    font-family: "Quicksand-Regular", sans-serif;  
+
+}
+
+
+.gallery-wrapper {
+    width: 1080px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.gallery-img  {
+    width: 541px;
+    overflow: hidden;
+}
+.gallery-img img{
+   width: 100%;
+   height: 100%;
+}
+.gallery-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-text p{
+    width: 355px;
+}
+.gallery-name {
+    font-family: "Economica-Regular", sans-serif;
+    font-size: 34px;
+    letter-spacing: 0.34px;
+    text-align: left;
+    color: #e3b359;
+
+
+}
+
+
+.gallery-text-descr {
+    display: inline-block;
+}
+
+
+.about-beans .wrapper {
+    display: flex;
+    padding-top: 106px;
+    padding-left: 89px;
+    padding-bottom: 106px;
+    background-color: #010103;
+    background-image: url("../media/images/special-things/arabica-cup.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    box-shadow: 830px -83px 147px 10px rgb(0 0 0 / 91%) inset;
+}
+
+.about-beans-info h2  {
+    font-family: "Economica-Regular", sans-serif;
+    font-size: 50px;
+    color: #faca36;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    margin-bottom: 17px;
+
+}
+
+.about-beans-info p  {
+    width: 768px;
+    font-family: "Quicksand-Regular", sans-serif;  
+    font-size: 20px;
+    line-height: 1.6;
+    color: #d0c0ac;
+    margin-bottom: 34px;
+    margin-top: 0;
+
+}
+
+
+.our-favorite-products {
+    padding-top: 100px;
+}
+
+
+.our-favorite-products .buttons-menu:nth-child() {
+    margin-right: 35px;
+}
+
+
+/****STYLE-FOR-BIG-MENU*****/
+
+
+/* .position-fav {
+} */
+
+.fav-item {    
+    width: 339px;
+    position: relative;
+}
+
+.fav-item .name {
+    position: absolute;
+    width: inherit;
+    bottom: 45px;
+    background-color: #101311;
+    opacity: 0.8;
+}
+
+
+.fav-item .name p {
+    font-family: "Economica-Regular", sans-serif;
+    font-size: 34px;
+    color: #c4c4c4;
+    text-align: center;
+
+}

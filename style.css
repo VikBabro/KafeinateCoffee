@@ -1,0 +1,49 @@
+.wrapper {
+        max-width: 1265px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title h3, h4, h5 {
+        margin: 0 0 35px;
+        font-family: "Economica-Bold", sans-serif;  
+        font-size: 50px;
+        color: #dd991d;
+    text-transform: uppercase;
+    text-align: center;
+    }
+    
+    .section-title p {
+        font-family: "Quicksand-Regular", sans-serif;  
+        font-size: 20px;
+        line-height: 19px;
+        text-align: center;
+        color: #444645;
+    }
+
+    .positions-name {
+        font-family: "Economica-Bold", sans-serif;
+        font-size: 34px;
+        line-height: 1.76;
+        color: #0a0a08;
+        text-align: center;
+        margin-top: 4px;
+        margin-bottom: 0;
+        }
+
+    .about-item {
+        font-family: "Quicksand-Regular", sans-serif;  
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        color: #444645;
+        margin-top: 5px;
+
+    }

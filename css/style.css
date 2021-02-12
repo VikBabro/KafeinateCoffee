@@ -11,14 +11,14 @@
     margin-bottom: 50px;
 }
 
-.section-title h3, h4, h5 {
-        margin: 0 0 35px;
-        font-family: "Economica-Bold", sans-serif;  
-        font-size: 50px;
-        color: #dd991d;
+.section-title h2, h3, h4, h5, h6 {
+    margin: 0 0 35px;
+    font-family: "Economica-Bold", sans-serif;  
+    font-size: 50px;
+    color: #dd991d;
     text-transform: uppercase;
     text-align: center;
-    }
+}
     
     .section-title p {
         font-family: "Quicksand-Regular", sans-serif;  

@@ -25,24 +25,20 @@
 
 /***HEADER-NAV-INTRO***/
 .intro {
-  /* width: 300vw;
-  display: flex;
-  transition: all 300ms ease 0s; */
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .header {
-        background-color: #131313;
+    background-color: #131313;
 }
 
- .header .wrapper {
+.header .wrapper {
     position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-top: 49px;
     padding-bottom: 51px;   
-  
 }
 
 .logo {
@@ -52,13 +48,12 @@
     top: 7px;
     height: 156px;
     width: 156px;
-    background-image: url("../media/images/header/logo-2.jpg");
+    background-image: url("../media/images/header/logo.png");
     background-size: cover;
     background-position: center;
     border: solid #131313 15px;
     border-radius: 50%;
 }
-
 
 .nav-buy {
     margin-right: 63px;
@@ -81,16 +76,15 @@
     font-family: "Quicksand-Regular", sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
-    color: white;
+    color: #fff;
 }
 
 .wrapper a:hover {
    color: #faca36;
 }
 
-
 .nav li a  {
-	color: white;
+	color: #fff;
 	text-decoration: none;  
 }
 
@@ -99,7 +93,7 @@
 }
 
 .buy-search svg {
-    fill: white;
+    fill: #fff;
     width: 23px;
     height: 21px;
     margin-right: 13px;
@@ -107,7 +101,7 @@
 
 .buy-search svg:hover {
     fill: #facb36;
- }
+}
  
 h1 {
     font-family: "Economica-Bold", sans-serif;
@@ -121,93 +115,90 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
 }
 .wr-home{
     background-size: cover;
     background-position: right bottom;
     background-image: url("../media/images/home/backgroung-home.jpg");
-height: calc(100vh - 125px);
-width: 100vw;
+    height: calc(100vh - 125px);
+    width: 100vw;
 }
 
 .home-wrapper {
     width: 516px;
     margin-right: 6vh;
     margin-top: 20vh;
-
 }
 
 .info-text {
     font-family: "Quicksand-Regular", sans-serif;
     font-size: 20px;
     line-height: 36px;
-    color: white;
+    color: #fff;
 }
 
 .button-intro {
     width: 191px;
-    height: 41px;
-    padding: 9px 46px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    margin-bottom: 23px;
+    border-radius: 4px;
     border: solid 2px #facb36;
     background-color: transparent;
-    border-radius: 4px;
-}
-
-.button-intro {
     font-family: "Quicksand-Regular", sans-serif;  
     font-size: 20px;
-    line-height: 2;
     letter-spacing: 0.2px;
     color: #faca36;
     margin: 0;
     text-decoration: none;
 }
 
-.button-intro:hover {
-    background-color: #faca36;
-    color: white;
+.button-intro:hover{
+    background-color: #facb36;
+    color: #fff;
 }
 
-.button-intro :hover  {
-    color: white;
-}
+/***STYLE-FOR-SLIDER-INTRO***/
+
 .pagination{
     position: absolute;
     bottom: 25px;
     width: 100%;
     text-align: center;
 }
+
 .pagination-page{
-transition: all 300ms ease 0s;
-  
-        width: 16px;
-        height: 16px;
-        border: 2px solid #86a4d5;
-        display: inline-block;
-        border-radius: 50%;
-        margin: 0 5px;
-        cursor: pointer;
-    
-}
-.pagination-page.active{
-    background-color: white;
-}
-.intro-slider{
-    width: 300vw;
-display: flex;
-transition: all 300ms ease 0s;
+    transition: all 300ms ease 0s;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
-/***END-HEADER-NAV-INTRO***/
+.pagination-page.active{
+    background-color: #faca36;
+    border: 2px solid #faca36;
+}
+
+.intro-slider{
+    width: 300vw;
+    display: flex;
+    transition: all 800ms ease 100ms;
+}
+
+/***END-HEADER-NAV-INTRO*END-STYLE-SLIDER***/
 
 .our-services  .wrapper {
     padding-top: 109px;
     padding-left: 126px;
     padding-right: 126px;
+    padding-bottom: 96px;
     background-color: #f4f4f4;
 }
-
 
 .service-item {
     display: flex;
@@ -220,47 +211,36 @@ transition: all 300ms ease 0s;
     margin-right: 90px;
 }
 
-
 .positions {
     width: 280px;
-    height: 401px;
 }
 
 .item-border {
     width: 256px;
     height: 256px;
     border-radius: 50%;
-    border: 7px solid;
-    border-color: #e6e6e6;
+    border: 7px solid #e6e6e6;
 }
 
-.item-image {
+.item-image img {
     width: 241px;
     height: 241px;
-    overflow: hidden;
-    background-image: url("../media/images/our-profucts/coffee-beans.jpg");
-    background-size: cover;
     border-radius: 50%;
     border: 7px solid;
     border-color: #d1d1d1; 
 }
 
-.item-image-second {
+.item-image-second img{
     width: 241px;
     height: 241px;
-    overflow: hidden;
-    background-image: url("../media/images/our-profucts/coffee-cup.jpg");
     border-radius: 50%;
     border: 7px solid;
     border-color: #d1d1d1;
 }
 
-.item-image-third {
+.item-image-third img {
     width: 241px;
     height: 241px;
-    overflow: hidden;
-    background-image: url("../media/images/our-profucts/toast.jpg");
-    background-position-x: 27%;
     border-radius: 50%;
     border: 7px solid;
     border-color: #d1d1d1;
@@ -298,8 +278,7 @@ aside {
 .buttons-menu {
     display: flex;
     justify-content: center;
-		 margin-bottom: 33px;
-
+	margin-bottom: 33px;
 }
 
 .buttons-menu button {
@@ -323,26 +302,12 @@ aside {
     background-color: #facb36;
     border: solid 2px #facb36;
     color: #fff;
-    
-  }
-
-/* .buttons-menu button a {
-    font-family: "Quicksand-Regular", sans-serif;  
-    font-size: 20px;
-    line-height: 0.9px;
-    color: #faca36;
-    margin: 0;
-    text-decoration: none;
-} */
+}
 
 .buttons-menu button:hover{
     background-color: #facb36;
-    color: white;
-
-    }
-
-
-
+    color: #fff;
+}
 
 .buttons-menu button:nth-child(even) {
     margin-left: 15px;
@@ -369,7 +334,6 @@ aside {
     display: flex;
 }
 
-
 .position-menu-item svg {
     display: block ;
     width: 43px;
@@ -377,7 +341,6 @@ aside {
     margin-bottom: 0;
     margin-right: 5px;
 }
-
 
 .position-menu-item .country-flag {
     display: flex;
@@ -392,13 +355,13 @@ aside {
     align-items: center;
 }
 .descr-like.active svg{
-    fill: red;
+    fill: #d12509;
 }
 .descr-like svg{
-    fill: grey;
+    fill: #d5c5b1;
 }
 .count-hearts{
-    color: white;
+    color: #d5c5b1;
 }
 .position-menu-item:nth-child(3) {
     border: none;
@@ -444,7 +407,6 @@ aside {
 
 
 .view-all-text {
-    display: inline-block;
     font-family: "Quicksand-Regular", sans-serif;  
     font-size: 18px;
     text-transform: uppercase;
@@ -453,11 +415,13 @@ aside {
     margin-right: 9px;
     margin-bottom: 0;
     margin-top: 0;
+    border: none;
+    background-color: transparent;
 }
 
 .view-all svg {
     width: 10px;
-    height: 17px;
+    height: 15px;
     fill: #faca36;
 }
 
@@ -473,10 +437,7 @@ aside {
 
 }
 
-
 /*****OUR SPECIAL THINGS*****/
-
-
 
 .our-special-things .wrapper {
     display: flex;
@@ -485,7 +446,6 @@ aside {
     background-color: #f4f4f4;
     padding-top: 99px;
     padding-bottom: 99px;
-
 }
 
 .our-special-things h6 {
@@ -496,23 +456,18 @@ aside {
     color: #dd991d;
     text-align: center;
     margin-bottom: 27px;
-
 }
-
 
 .our-special-things-text {
     font-family: "Quicksand-Regular", sans-serif;  
-
 }
-
 
 .gallery-wrapper {
     width: 1080px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #ffffff;
-
+    background-color: #fff;
 }
 
 .gallery-item {
@@ -525,10 +480,12 @@ aside {
     width: 541px;
     overflow: hidden;
 }
+
 .gallery-img img{
    width: 100%;
    height: 100%;
 }
+
 .gallery-text {
     width: 50%;
     display: flex;
@@ -536,24 +493,22 @@ aside {
     justify-content: center;
     align-items: center;
 }
+
 .gallery-text p{
     width: 355px;
 }
+
 .gallery-name {
     font-family: "Economica-Regular", sans-serif;
     font-size: 34px;
     letter-spacing: 0.34px;
     text-align: left;
     color: #e3b359;
-
-
 }
-
 
 .gallery-text-descr {
     display: inline-block;
 }
-
 
 .about-beans .wrapper {
     display: flex;
@@ -574,7 +529,6 @@ aside {
     letter-spacing: 0.5px;
     margin-top: 0;
     margin-bottom: 17px;
-
 }
 
 .about-beans-info p  {
@@ -585,44 +539,103 @@ aside {
     color: #d0c0ac;
     margin-bottom: 34px;
     margin-top: 0;
-
 }
-
 
 .our-favorite-products {
     padding-top: 100px;
 }
 
-
 .our-favorite-products .buttons-menu:nth-child() {
     margin-right: 35px;
 }
 
-
 /****STYLE-FOR-BIG-MENU*****/
 
+.position-fav-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
-/* .position-fav {
-} */
-
-.fav-item {    
-    width: 339px;
+.position-fav-wrap .fav-item {
     position: relative;
+    width: 340px;
+    height: 455px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.image-item {
+    width: 340px;
+    height: 455px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.image-item .img {
+    object-fit: cover;
 }
 
 .fav-item .name {
+    width: 340px;
     position: absolute;
-    width: inherit;
     bottom: 45px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
     background-color: #101311;
     opacity: 0.8;
 }
 
-
-.fav-item .name p {
+.fav-item .name P {
     font-family: "Economica-Regular", sans-serif;
     font-size: 34px;
     color: #c4c4c4;
-    text-align: center;
+    margin: 0;
+}
 
+.cart-order {
+    position:absolute;
+    bottom: 0px;
+    width: 340px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between
+}
+
+.cart-order .cart, .order {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-family: "Quicksand-Regular", sans-serif;  
+    font-size: 20px;
+    color: #211a0b;
+    text-transform: capitalize;
+}
+
+.cart-order .cart {
+    width: 170px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #211a0b;
+    font-family: "Quicksand-Regular", sans-serif;  
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.cart-order .order {
+    width: 170px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #fac036;
+}
+
+.cart-order .order div {
+    width: 170px;
+    margin: 0;
 }

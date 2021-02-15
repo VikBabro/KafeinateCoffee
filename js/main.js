@@ -1,3 +1,30 @@
+
+let input = document.querySelector(".submit");
+input.addEventListener('click',(e)=>{
+  e.preventDefault();
+})
+
+let bindAllTab = function () {
+  let menuElements = document.querySelectorAll('.menu-item');
+  for (let i = 0; i < menuElements.length; i++) {
+    menuElements[i].addEventListener('click', changeTab, false);
+  }
+};
+let clearTab = function () {
+  let menuElements = document.querySelectorAll('.menu-item');
+  console.log(menuElements);
+  for (let i = 0; i < menuElements.length; i++) {
+    menuElements[i].classList.remove('active');
+    let id = menuElements[i].getAttribute('id');
+    document.querySelector(`[data-tab = ${id}]`).classList.remove('active');
+  }
+};
+let changeTab = function (e) {
+  clearTab();
+    e.target.classList.add('active');
+  let id = e.currentTarget.getAttribute('id');
+  document.querySelector(`[data-tab = ${id}]`).classList.add('active');
+};
 let bindAll = function () {
   let menuElements = document.querySelectorAll('.b-nav-tab');
   for (let i = 0; i < menuElements.length; i++) {
@@ -16,12 +43,13 @@ let clear = function () {
 
 let change = function (e) {
   clear();
-  e.target.classList.add('active');
+    e.target.classList.add('active');
   let id = e.currentTarget.getAttribute('id');
   document.querySelector(`[data-tab = ${id}]`).classList.add('active');
 };
 
 bindAll();
+bindAllTab();
 let paginations = document.querySelector('.pagination');
 let paginationPages = document.querySelectorAll('.pagination-page');
 let slider = document.querySelector('.intro-slider');
@@ -34,6 +62,21 @@ paginations.addEventListener('click', (e) => {
     slider.setAttribute(
       'style',
       `transform:translate3d(-${e.target.id}00vw, 0px, 0px)`
+    );
+  }
+});
+let visitorPaginations = document.querySelector('.visitor-pagination');
+let visitorPaginationPages = document.querySelectorAll('.visitor-pagination-page');
+let visitorSlider = document.querySelector('.visitor-wrap');
+visitorPaginations.addEventListener('click', (e) => {
+  if (e.target.classList[0] === 'visitor-pagination-page') {
+    for (let i = 0; i < 3; i++) {
+      visitorPaginationPages[i].classList.remove('active');
+    }
+    e.target.classList.add('active');
+    visitorSlider.setAttribute(
+      'style',
+      `transform:translate3d(-${e.target.id * 1260}px, 0px, 0px)`
     );
   }
 });

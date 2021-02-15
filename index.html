@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KAFEINATE COFFEE</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
+    <link rel="icon" href="./media/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalaize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/settings.css">
-
 </head>
 <body>  
     <header class="header">
@@ -133,11 +131,11 @@
     <div class="menu">
         <h4>MENU</h4>
     <div class="buttons-menu">
-        <button id="orange" class="b-nav-tab active">Coffee Beans</button>
-        <button id="green"  class="b-nav-tab">Drinks</button>
-        <button id="blue" class="b-nav-tab">Breakfast</button>
+        <button id="beans-coffee" class="b-nav-tab active">Coffee Beans</button>
+        <button id="drinks-menu"  class="b-nav-tab">Drinks</button>
+        <button id="breakfast-menu" class="b-nav-tab">Breakfast</button>
     </div>
-    <div class="position-menu active" data-tab="orange">
+    <div class="position-menu active" data-tab="beans-coffee">
     <div class="position-menu-item">
         <div class="country-flag">
             <p class="name">1/ Brazil </p>
@@ -346,7 +344,7 @@
     </div>
 </div>
 </div>
-<div class="position-menu" data-tab="green">
+<div class="position-menu" data-tab="drinks-menu">
     <div class="position-menu-item">
         <div class="country-flag">
             <p class="name">1/ Cappuchino</p>
@@ -444,7 +442,7 @@
     </div>
 </div>
 </div>
-<div class="position-menu" data-tab="blue">
+<div class="position-menu" data-tab="breakfast-menu">
     <div class="position-menu-item">
         <div class="country-flag">
             <p class="name">1/ Belgian Waffle</p>
@@ -630,10 +628,96 @@
             <button id="break" class="menu-item">Breakfast</button>
             <button id="package" class="menu-item">Coffee Package</button>
         </div>
-        <div class="position-fav-wrap">
+        <div class="position-fav-wrap active" data-tab="beans">
             <div class="fav-item">
                 <div class="image-item">
-                    <img class="img" src="./media/images/fav-producrts/image-one.jpg" alt="">
+                    <img class="img" src="./media/images/fav-producrts/beans/beans-one.jpg" alt="Beans from Brazil">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Brazil</p>
+                    <div class="price-item"><p class="price">$15</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/beans/beans-two.jpg" alt="Beans from Colombia">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Colombia</p>
+                    <div class="price-item"><p class="price">$12</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/beans/beans-three.jpg" alt="Beans from Ethiopia">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Ethiopia</p>
+                    <div class="price-item"><p class="price">$13</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/beans/beans-four.jpg" alt="Beans from Costa Rica">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Costa Rica</p>
+                    <div class="price-item"><p class="price">$14</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/beans/beans-five.jpg" alt="Beans from Indonesia">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Indonesia</p>
+                    <div class="price-item"><p class="price">$11</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/beans/beans-six.jpg" alt="Beans from Rwanda">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Rwanda</p>
+                    <div class="price-item"><p class="price">$14</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+        </div>
+        <div class="position-fav-wrap" data-tab="drinks">
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/drinks/drink-one.jpg" alt="Cappuchino">
                 </div>
                 <div class="name-item">
                     <p class="name-item-position">Cappuchino</p>
@@ -641,27 +725,27 @@
                     </div>
                 </div>
                 <div class="cart-order">
-                    <div class="cart">add to cart</div>
-                    <div class="order">order</div>
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
                 </div>
             </div>
             <div class="fav-item">
                 <div class="image-item">
-                    <img class="img" src="./media/images/fav-producrts/image-two.jpg" alt="">
+                    <img class="img" src="./media/images/fav-producrts/drinks/drink-two.jpg" alt="Fappuchino">
                 </div>
                 <div class="name-item">
                     <p class="name-item-position">Fappuchino</p>
-                    <div class="price-item"><p class="price">$5</p>
+                    <div class="price-item"><p class="price">$6</p>
                     </div>
                 </div>
                 <div class="cart-order">
-                    <div class="cart">add to cart</div>
-                    <div class="order">order</div>
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
                 </div>
             </div>
             <div class="fav-item">
                 <div class="image-item">
-                    <img class="img" src="./media/images/fav-producrts/image-three.jpg" alt="">
+                    <img class="img" src="./media/images/fav-producrts/drinks/drink-three.jpg" alt="Mocha">
                 </div>
                 <div class="name-item">
                     <p class="name-item-position">Mocha</p>
@@ -669,50 +753,222 @@
                     </div>
                 </div>
                 <div class="cart-order">
-                    <div class="cart">add to cart</div>
-                    <div class="order">order</div>
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
                 </div>
             </div>
             <div class="fav-item">
                 <div class="image-item">
-                    <img class="img" src="./media/images/fav-producrts/image-four.jpg" alt="">
+                    <img class="img" src="./media/images/fav-producrts/drinks/drink-four.jpg" alt="Cafe Latte">
                 </div>
                 <div class="name-item">
                     <p class="name-item-position">Cafe Latte</p>
-                    <div class="price-item"><p class="price">$5</p>
+                    <div class="price-item"><p class="price">$5.5</p>
                     </div>
                 </div>
                 <div class="cart-order">
-                    <div class="cart">add to cart</div>
-                    <div class="order">order</div>
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
                 </div>
             </div>
             <div class="fav-item">
                 <div class="image-item">
-                    <img class="img" src="./media/images/fav-producrts/image-five.jpg" alt="">
+                    <img class="img" src="./media/images/fav-producrts/drinks/drink-five.jpg" alt="Expresso">
                 </div>
                 <div class="name-item">
                     <p class="name-item-position">Expresso</p>
-                    <div class="price-item"><p class="price">$5</p>
+                    <div class="price-item"><p class="price">$5.5</p>
                     </div>
                 </div>
                 <div class="cart-order">
-                    <div class="cart">add to cart</div>
-                    <div class="order">order</div>
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
                 </div>
             </div>
             <div class="fav-item">
                 <div class="image-item">
-                    <img class="img" src="./media/images/fav-producrts/image-six.jpg" alt="">
+                    <img class="img" src="./media/images/fav-producrts/drinks/drink-six.jpg" alt="Machiato">
                 </div>
                 <div class="name-item">
                     <p class="name-item-position">Machiato</p>
-                    <div class="price-item"><p class="price">$5</p>
+                    <div class="price-item"><p class="price">$6.5</p>
                     </div>
                 </div>
                 <div class="cart-order">
-                    <div class="cart">add to cart</div>
-                    <div class="order">order</div>
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+        </div>
+        <div class="position-fav-wrap" data-tab="break">
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/breakfast/position-one.jpg" alt="Belgian Waffle">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Belgian Waffle</p>
+                    <div class="price-item"><p class="price">$8.5</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/breakfast/position-two.jpg" alt="Portabella">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Portabella</p>
+                    <div class="price-item"><p class="price">$8.9</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/breakfast/position-three.jpg" alt="Banana Nut Waffle">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Banana Nut Waffle</p>
+                    <div class="price-item"><p class="price">$8.5</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/breakfast/position-four.jpg" alt="Turkey Club">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Turkey Club</p>
+                    <div class="price-item"><p class="price">$10</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/breakfast/position-five.jpg" alt="Cheeseburger">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Cheeseburger</p>
+                    <div class="price-item"><p class="price">$9.5</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/breakfast/position-six.jpg" alt="French Toast">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">French Toast</p>
+                    <div class="price-item"><p class="price">$7.9</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+        </div>
+        <div class="position-fav-wrap" data-tab="package">
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/package/package-one.jpg" alt="Julius Meinl">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Julius Meinl</p>
+                    <div class="price-item"><p class="price">$25</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/package/package-two.jpg" alt="Lavazza">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Lavazza</p>
+                    <div class="price-item"><p class="price">$23</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/package/package-three.jpg" alt="Carraro ">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Carraro </p>
+                    <div class="price-item"><p class="price">$22</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/package/package-four.jpg" alt="Illy">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Illy</p>
+                    <div class="price-item"><p class="price">$24</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/package/package-five.jpg" alt="Malongo">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Malongo</p>
+                    <div class="price-item"><p class="price">$23</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
+                </div>
+            </div>
+            <div class="fav-item">
+                <div class="image-item">
+                    <img class="img" src="./media/images/fav-producrts/package/package-six.jpg" alt="Buscaglione">
+                </div>
+                <div class="name-item">
+                    <p class="name-item-position">Buscaglione</p>
+                    <div class="price-item"><p class="price">$25</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <button class="cart">add to cart</button>
+                    <button class="order">order</button>
                 </div>
             </div>
         </div>
@@ -729,6 +985,7 @@
     <div class="section-title">
         <h6>OUR HAPPY VISITOR</h6>
     </div>
+    <div class="visitor-slider">
     <div class="visitor-wrap">
         <div class="visitor-block">
             <div class="visitor-feedback"><svg viewBox="0 0 512 512">
@@ -752,7 +1009,58 @@
                 <p class="adress">Student, NewYork, 22 ages</p>
             </div>
         </div>
+        <div class="visitor-block">
+            <div class="visitor-feedback"><svg viewBox="0 0 512 512">
+                    <path
+                        d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                    </path>
+                </svg>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt porro aliquid consectetur adipisi
+                    laborum omnis labore sit, pariatur neque veritatis.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><svg viewBox="0 0 512 512">
+                    <path
+                        d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z">
+                    </path>
+                </svg>
+            </div>
+            <div class="visitor-avatar">
+                <img src="./media/images/visitors/avatar.jpg" alt="">
+            </div>
+            <div class="name-adress">
+                <p class="name">JANE MILLER</p>
+                <p class="adress">Student, NewYork, 22 ages</p>
+            </div>
+        </div>
+        <div class="visitor-block">
+            <div class="visitor-feedback"><svg viewBox="0 0 512 512">
+                    <path
+                        d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                    </path>
+                </svg>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt porro aliquid consectetur adipisi
+                    laborum omnis labore sit, pariatur neque veritatis.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><svg viewBox="0 0 512 512">
+                    <path
+                        d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z">
+                    </path>
+                </svg>
+            </div>
+            <div class="visitor-avatar">
+                <img src="./media/images/visitors/avatar.jpg" alt="">
+            </div>
+            <div class="name-adress">
+                <p class="name">JANE MILLER</p>
+                <p class="adress">Student, NewYork, 22 ages</p>
+            </div>
+        </div>
     </div>
+    
+</div>
+<div class="visitor-pagination">
+    <div class="visitor-pagination-page active" id="0"><span class=""></span></div>
+    <div class="visitor-pagination-page"id="1"><span class=""></span></div>
+    <div class="visitor-pagination-page"id="2"><span class=""></span></div>
+</div>
 </div>
 </section>
 <section class="contact">
@@ -867,7 +1175,7 @@
 </footer>
 
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script> -->
 <script src='./js/main.js'></script>
 
 </body>

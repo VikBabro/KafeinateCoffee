@@ -12,7 +12,7 @@
     margin-bottom: 50px;
 }
 
-.section-title h2, h3, h4, h5, h6 {
+.section-title h2 {
     margin: 0 0 35px;
     font-family: "Economica-Bold", sans-serif;  
     font-size: 50px;
@@ -35,8 +35,7 @@
         line-height: 1.76;
         color: #0a0a08;
         text-align: center;
-        margin-top: 4px;
-        margin-bottom: 0;
+        margin: 4px 0 0 0;
         }
 
     .about-item {
@@ -47,4 +46,8 @@
         color: #444645;
         margin-top: 5px;
 
+    }
+
+    button {
+        outline: none;
     }

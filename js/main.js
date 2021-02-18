@@ -61,7 +61,7 @@ paginations.addEventListener('click', (e) => {
     e.target.classList.add('active');
     slider.setAttribute(
       'style',
-      `transform:translate3d(-${e.target.id}00vw, 0px, 0px)`
+      `transform:translate3d(-${e.target.id * 1250}px, 0px, 0px)`
     );
   }
 });

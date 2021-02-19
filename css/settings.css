@@ -301,11 +301,13 @@ aside {
 }
 
 .position-menu-item .descr {
+    width: 100%;
     display: inline-block;
     font-size: 16px;
     color: #a9a8a6;
     text-align: left;
     margin-bottom: 0;
+  
 }
 
 .view-all {
@@ -374,27 +376,28 @@ aside {
 }
 
 .gallery-wrapper {
-    width: 1080px;
+    width: 90%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #fff;
 }
 
-.gallery-item {
+.gallery-item-first, .gallery-item-second, .gallery-item-third {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
 .gallery-img {
-    width: 541px;
+    width: 50%;
     overflow: hidden;
 }
 
 .gallery-img img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .gallery-text {
@@ -423,10 +426,15 @@ aside {
     text-align: justify;
 }
 
+.wrapper-about {
+    width: 80%;
+}
+
 .about-beans .wrapper {
     display: flex;
+    justify-content: center;
     padding-top: 106px;
-    padding-left: 89px;
+    padding-left: 15px;
     padding-bottom: 106px;
     background-color: #010103;
     background-image: url("../media/images/special-things/arabica-cup.jpg");
@@ -445,7 +453,7 @@ aside {
 }
 
 .about-beans-info p {
-    width: 768px;
+    width: 75%;
     line-height: 1.6;
     color: #d0c0ac;
     margin-bottom: 34px;
@@ -706,8 +714,11 @@ aside {
 
 /***CONTACT-US**/
 
-.contact .wrapper {
+.contact {
     padding-top: 100px;
+}
+
+.contact .wrapper {
     padding-bottom: 100px;
 }
 
@@ -716,7 +727,6 @@ aside {
     justify-content: space-evenly;
 
 }
-
 
 .adress-mail {
     display: flex;
@@ -752,8 +762,6 @@ aside {
     height: 27px;
     fill: #daa501;
 }
-
-/***CONTACT-US***/
 
 .form-contact {
     display: flex;
@@ -914,7 +922,6 @@ footer .social .svg-icon {
 footer .social svg {
     fill: #fff;
 }
-
 
 
 

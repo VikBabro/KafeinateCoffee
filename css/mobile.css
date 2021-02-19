@@ -1,0 +1,108 @@
+@media (max-width: 1200px) {
+
+    .header .wrapper {
+        justify-content: center;
+    }
+
+
+    .logo {
+        display: none;
+    }
+    .wrapper-name {
+        justify-content: flex-start;
+    }
+    .wrapper-slider {
+        justify-content: flex-start;
+    }
+    .menu {
+        width: 100%;
+    }
+
+    .img-right-block-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    
+    .gallery-img {
+    display: none;
+}
+
+.gallery-text {
+    width: 100%;
+    background-image: url("../media/images/special-things/cup-cake.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 1px 2px black, 0 0 1em orange;
+    color: #fff;
+}
+
+.gallery-item-second {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gallery-item-second .gallery-text  {
+    background-image: url("../media/images/special-things/beans.png");
+}
+
+.gallery-item-third .gallery-text {
+    background-image: url("../media/images/special-things/flakes.jpg");
+}
+
+}
+
+
+@media (max-width: 930px) {
+  
+    .service-item {
+        flex-direction: column;
+    }
+
+    .positions {
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+
+    .block-position-name {
+        margin-left: 10px;
+    }
+
+    .about-beans .wrapper {
+        box-shadow: 600px 20px 81px -20px rgb(0 0 0 / 91%) inset;
+    }
+
+    .position-fav-wrap .fav-item {
+        width: 45%;
+    }
+
+    .contact-wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;;
+        align-items: center;
+    }
+
+    .adress-mail {
+        width: 65%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .adress-mail .icon-text {
+        width: 100%;
+    }
+
+    /* .adress-mail .icon-text:nth-child(3) {
+        width: 49%;
+    }
+
+    .adress-mail .icon-text:nth-child(4) {
+        width: 49%;
+    } */
+
+}
+

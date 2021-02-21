@@ -84,7 +84,9 @@ span {
     line-height: 0.9px;
     color: #faca36;
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer;    
+    line-height: 0.8;
+
 }
 
 .buttons-menu .active {
@@ -101,7 +103,6 @@ span {
 .buttons-menu button:nth-child(even) {
     margin-left: 15px;
     margin-right: 15px;
-    line-height: 0.7;
 }
 
 .section-title p {

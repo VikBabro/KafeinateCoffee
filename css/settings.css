@@ -78,11 +78,15 @@
     fill: #facb36;
 }
 
-.intro .wrapper {
+
+.intro {
     background-image: url("../media/images/home/backgroung-home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+}
+.intro .wrapper {
+    
     display: flex;
     flex-direction: column;
     height: calc(100vh - 120px);
@@ -169,6 +173,10 @@ h1 {
 }
 
 /***END-HEADER-NAV-INTRO*END-STYLE-SLIDER***/
+
+.our-services {
+    background-color: #f4f4f4;
+}
 
 .our-services .wrapper {
     padding-top: 109px;
@@ -356,6 +364,11 @@ aside {
 
 /*****OUR SPECIAL THINGS*****/
 
+.our-special-things {
+    background-color: #f4f4f4;
+}
+
+
 .our-special-things .wrapper {
     display: flex;
     flex-direction: column;
@@ -516,6 +529,7 @@ aside {
 
 .image-item .img {
     object-fit: cover;
+    width: 100%;
 }
 
 .fav-item .name-item {

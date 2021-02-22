@@ -14,20 +14,35 @@
     <header class="header">
     <div class="wrapper">
         <div class="logo"></div>
-            <!-- <div class="nav-buy">
+        <div class="burger-menu ">
+        
+            <a href="#" class="burger-menu__button">
+              <span class="burger-menu__lines"></span>
+            </a>
+            <nav class="burger-menu__nav">
+              <ul class="list">
+                <li class="list__item"><a href="">Home</a></li>
+                <li class="list__item"><a href="#menu">Menu</a></li>
+                <li class="list__item"><a href="#about-us">About Us</a></li>
+                <li class="list__item"><a href="#shop">Shop</a></li>
+                <li class="list__item"><a href="#contact">Contact</a></li>                
+            </nav>
+            <div class="burger-menu__overlay"></div>
+          </div>
+            <div class="nav-buy">
         <nav class="nav">
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav> -->
-            <!-- <div class="buy-search">
+        </nav>
+            <div class="buy-search">
             <a href="#"> <svg  viewBox="0 0 576 512"><path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></svg></a>
             <a href="#"><svg  viewBox="0 0 512 512"><path  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></a>
-        </div> -->
+        </div>
         </div>
     </div>
 </header>
@@ -36,7 +51,7 @@
         <div class="wrapper-name">
         <h1>KAFEINATE COFFEE</h1>
         </div>
-        <!-- <div class="intro-slider-wrapper">
+        <div class="intro-slider-wrapper">
         <div class="intro-slider">
             <div class="wrapper-slider">
                <div> 
@@ -60,17 +75,17 @@
                 <button class="button-intro" >Oder now</button>
             </div></div>
         </div>
-    </div> -->
     </div>
-        <!-- <div class="pagination">
+    </div>
+        <div class="pagination">
             <div class="pagination-page active" id="0"><span class=""></span></div>
             <div class="pagination-page"id="1"><span class=""></span></div>
             <div class="pagination-page"id="2"><span class=""></span></div>
-        </div> -->
+        </div>
 </section> 
 <section class="our-services">
 <div class="wrapper">
-    <div class="section-title">
+    <div class="section-title" id='about-us'>
         <h2><span>Our</span> services</h2>
         <p>Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Nulla semper arcu.</p>
         <p> Nam molestie sem eu quam fermentum a tempus nisi aliquet. </p>
@@ -109,7 +124,7 @@
     </div>
 </div>
 </section>
-<section class="menu-section">
+<section class="menu-section" id='menu'>
 <div class="wrapper">
     <div class="menu">
         <h5>MENU</h5>
@@ -537,7 +552,7 @@
 </section>
 <section class="our-special-things">
     <div class="wrapper">
-        <div class="section-title">
+        <div class="section-title" >
             <h5><span>Our</span> SPECIAL THINGS</h5>
             <p >Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Nulla
                 semper arcu.</p>
@@ -601,7 +616,7 @@
 </section>
 <section class="our-favorite-products">
     <div class="wrapper">
-        <div class="section-title">
+        <div class="section-title" id='shop'>
             <h2><span>OUR</span> FAVORITE PRODUCTS</h2>
         </div>
         <div class="buttons-menu">
@@ -967,7 +982,7 @@
     <div class="section-title">
         <h6><span>OUR</span> HAPPY VISITOR</h6>
     </div>
-    <!-- <div class="visitor-slider">
+    <div class="visitor-slider">
     <div class="visitor-wrap">
         <div class="visitor-block">
             <div class="visitor-feedback"><svg viewBox="0 0 512 512">
@@ -1034,19 +1049,19 @@
                 <p class="name">JANE MILLER</p>
                 <p class="adress">Student, NewYork, 22 ages</p>
             </div>
-        </div> -->
-    <!-- </div>
+        </div>
+    </div>
     
 </div>
 <div class="visitor-pagination">
     <div class="visitor-pagination-page active" id="0"><span class=""></span></div>
     <div class="visitor-pagination-page"id="1"><span class=""></span></div>
     <div class="visitor-pagination-page"id="2"><span class=""></span></div>
-</div> -->
+</div> 
 </div>
 </section>
 <section class="contact"> 
-    <div class="section-title">
+    <div class="section-title" id='contact'>
         <h6>CONTACT US</h6>
     </div>
 <div class="wrapper">

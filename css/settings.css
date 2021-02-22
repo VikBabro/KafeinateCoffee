@@ -30,6 +30,101 @@
     border-radius: 50%;
 }
 
+.burger-menu {
+    display: none;
+}
+
+.burger-menu__button {
+    display: none;
+    position: fixed;
+    top: 2rem;
+    right: 4.3rem;
+    z-index: 30;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .burger-menu__lines,
+  .burger-menu__lines::after,
+  .burger-menu__lines::before {
+    position: absolute;
+    width: 3rem;
+    height: 0.4rem;
+    background-color: #FDDCC4;
+    transition: 0.5s;
+  }
+  
+  .burger-menu__lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .burger-menu__lines::before {
+    content: "";
+    top: -1rem;
+  }
+  
+  .burger-menu__lines::after {
+    content: "";
+    top: 1rem;
+  }
+  
+  .burger-menu_active .burger-menu__lines {
+    transform-origin: center center;
+    transform: rotate(-90deg);
+    right: 9rem;
+  }
+  
+  .burger-menu__nav {
+    padding: 4rem 1rem;
+    position: fixed;
+    z-index: 20;
+    width: 32rem;
+    height: 100%;
+    background-color: #292929;
+    overflow-y: auto;
+    top: 0;
+    right: -1000%;
+    transition: 1s;
+  }
+  
+  .burger-menu__nav .logo {
+    margin-bottom: 15.8rem;
+  }
+  
+  .burger-menu__nav ul {
+    display: flex;
+    flex-direction: column;
+    height: 24.7rem;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none; 
+  }
+  .burger-menu__nav ul li a {
+    font-size: 2.7rem;
+    color: #0a0a08;
+    text-decoration: none;
+  }
+  
+  .burger-menu_active .burger-menu__nav {
+    right: 0;
+  }
+  
+  .burger-menu__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(41, 41, 41, 0.6);
+  }
+  
+  .burger-menu_active .burger-menu__overlay {
+    display: block;
+  }
 .nav-buy {
     margin-top: 49px;
 }
@@ -98,7 +193,7 @@
     justify-content: flex-end;
 }
 .wrapper-slider {
-    width: 1250px;
+    width: 1260px;
     display: flex;
     justify-content: flex-end;
 }
@@ -162,14 +257,14 @@ h1 {
 }
 
 .intro .intro-slider {
-    width: 3750px;
+    width: 3780px;
     display: flex;
     
     transition: all 800ms ease 100ms;
 }
 .intro-slider-wrapper {
   overflow: hidden;
-  width: 1250px;
+  width: 1260px;
 }
 
 /***END-HEADER-NAV-INTRO*END-STYLE-SLIDER***/

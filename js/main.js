@@ -1,4 +1,22 @@
-
+const winWidth = document.documentElement.clientWidth;
+let sliderWidth;
+switch (true) {
+  case winWidth < 480:
+    sliderWidth = 375;
+    break;
+    case winWidth < 768:
+      sliderWidth = 480;
+      break;
+      case winWidth < 990:
+        sliderWidth = 768
+        break;
+        case winWidth < 1200:
+          sliderWidth=990
+          break;
+  default:
+    sliderWidth = 1260
+    break;
+}
 let input = document.querySelector(".submit");
 input.addEventListener('click',(e)=>{
   e.preventDefault();
@@ -61,7 +79,7 @@ paginations.addEventListener('click', (e) => {
     e.target.classList.add('active');
     slider.setAttribute(
       'style',
-      `transform:translate3d(-${e.target.id * 1250}px, 0px, 0px)`
+      `transform:translate3d(-${e.target.id * sliderWidth}px, 0px, 0px)`
     );
   }
 });
@@ -76,7 +94,7 @@ visitorPaginations.addEventListener('click', (e) => {
     e.target.classList.add('active');
     visitorSlider.setAttribute(
       'style',
-      `transform:translate3d(-${e.target.id * 1260}px, 0px, 0px)`
+      `transform:translate3d(-${e.target.id * sliderWidth}px, 0px, 0px)`
     );
   }
 });
@@ -94,7 +112,30 @@ lickBlock.addEventListener('click', (e) => {
   }
 });
 
-
+const burgerMenu = document.querySelector(".burger-menu");
+const burgerButton = document.querySelector(".burger-menu__button");
+const burgerLink = document.querySelector(".list");
+const burgerOverlay = document.querySelector(".burger-menu__overlay");
+const body = document.querySelector("body");
+burgerButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  toggleMenu();
+});
+burgerLink.addEventListener("click", (e) => {
+  if(e.target.tagName === "A"){
+    toggleMenu();
+  }
+  
+});
+burgerOverlay.addEventListener("click", (e) => {
+  toggleMenu();
+});
+function toggleMenu() {
+  burgerMenu.classList.toggle("burger-menu_active");
+  if (burgerMenu.classList.contains("burger-menu_active")) {
+    body.style = "overflow: hidden";
+  } else body.style = "overflow: visibility";
+}
 
 
 

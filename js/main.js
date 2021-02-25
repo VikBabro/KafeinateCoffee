@@ -1,10 +1,13 @@
 const winWidth = document.documentElement.clientWidth;
 let sliderWidth;
 switch (true) {
+  case winWidth < 350:
+    sliderWidth = 310;
+    break;
   case winWidth < 480:
     sliderWidth = 375;
     break;
-    case winWidth < 768:
+    case winWidth < 769:
       sliderWidth = 480;
       break;
       case winWidth < 990:

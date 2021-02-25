@@ -144,3 +144,14 @@ button:focus {
 .section-title h6 span {
     color: white;
 }
+
+.svg-icon {
+    position: relative;
+}
+
+.svg-icon svg {
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%,-50%);
+}

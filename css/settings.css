@@ -39,18 +39,18 @@
 .burger-menu__button {
     display: none;
     position: fixed;
-    top: 2rem;
-    right: 4.3rem;
+    top: 50px;
+    right: 13%;
     z-index: 30;
-    width: 80px;
-    height: 80px;
+    width: 20px;
+    height: 20px;
 }
   
 .burger-menu__lines,
 .burger-menu__lines::after,
 .burger-menu__lines::before {
     position: absolute;
-    width: 3rem;
+    width:40px;
     height: 0.4rem;
     background-color: #FDDCC4;
     -webkit-transition: 0.5s;
@@ -87,7 +87,7 @@
 }
   
 .burger-menu__nav {
-    padding: 9rem 1rem;
+    padding: 72px 35px;
     position: fixed;
     z-index: 20;
     width: 23rem;
@@ -106,6 +106,7 @@
 }
   
 .burger-menu__nav ul {
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -147,6 +148,10 @@
 .burger-menu_active .burger-menu__overlay {
     display: block;
   }
+
+.name-mobile {
+    display: none;
+}
 
 .nav-buy {
     margin-top: 49px;
@@ -532,6 +537,15 @@ aside {
     fill: #faca36;
 }
 
+
+.menu-section {
+    background-color: #131313;
+    background-image: url(../media/images/menu/background-menu.jpg);
+    background-repeat: repeat-y;
+    background-position: 100%;
+}
+
+
 .img-right-block-menu {
     width: 35%;
     display: -webkit-box;
@@ -656,6 +670,24 @@ aside {
     text-align: justify;
 }
 
+
+.about-beans {
+    background-color: #010103;
+    background-image: url(../media/images/special-things/arabica-cup.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.about-beans::after {
+    content: '';
+    display: block;
+    max-width: inherit;
+    max-height: inherit;
+    color: khaki;
+}
+
+
+
 .wrapper-about {
     width: 80%;
 }
@@ -670,12 +702,8 @@ aside {
     padding-top: 106px;
     padding-left: 15px;
     padding-bottom: 106px;
-    background-color: #010103;
-    background-image: url("../media/images/special-things/arabica-cup.jpg");
-    background-repeat: no-repeat;
-    background-position: top right;
-    -webkit-box-shadow: 830px -83px 147px 10px rgb(0 0 0 / 91%) inset;
-            box-shadow: 830px -83px 147px 10px rgb(0 0 0 / 91%) inset;
+   
+            /* box-shadow: 830px -83px 147px 10px rgb(0 0 0 / 91%) inset; */
 }
 
 .about-beans-info h2 {
@@ -876,6 +904,13 @@ aside {
 
 /***VISITORS***/
 
+.visitor {
+    background-image: url("../media/images/visitors/visitor-backgr.jpg");
+    background-size: cover;
+}
+
+
+
 .visitor .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -891,8 +926,6 @@ aside {
     padding-right: 15px;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: url("../media/images/visitors/visitor-backgr.jpg");
-    background-size: cover;
     position: relative;
 }
 
@@ -1057,16 +1090,12 @@ aside {
     text-align: left;
 }
 
+.adress-mail a {
+    text-decoration: none;
+    color: #373737;
+}
+
 .icon-text .svg-icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     border: solid 2px #daa501;
     -ms-flex-negative: 0;
         flex-shrink: 0;
@@ -1095,7 +1124,7 @@ aside {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .name-mail input {
@@ -1115,7 +1144,7 @@ aside {
     width: 100%;
     border: none;
     padding: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     background-color: #e8e8e8;
     letter-spacing: 0.2px;
     color: #bebebe;
@@ -1171,10 +1200,13 @@ footer .wrapper {
 
 /***SUBSCRIBE***/
 
+.subscribe {
+    background-color: #101311;
+}
+
 .subscribe .wrapper {
     padding-left: 53px;
     padding-right: 53px;
-    background-color: #101311;
     position: relative;
 }
 
@@ -1245,6 +1277,12 @@ footer .wrapper {
 
 /***FOOTER***/
 
+footer {
+    background-color: #fac036;
+ 
+}
+
+
 footer .social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1256,16 +1294,7 @@ footer .social {
 footer .social .svg-icon {
     width: 35px;
     height: 35px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     background-color: #e49b12;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-right: 14px;
     border: solid 2px #e49b12;
     border-radius: 50%;
@@ -1274,3 +1303,15 @@ footer .social .svg-icon {
 footer .social svg {
     fill: #fff;
 }
+
+footer .social .svg-icon:hover {
+    background-color:#f0bc88;
+    border-color: #f0bc88; 
+}
+
+
+.svg-icon:hover {
+   background-color:#f0bc88;
+   border-color: #f0bc88; 
+}
+    

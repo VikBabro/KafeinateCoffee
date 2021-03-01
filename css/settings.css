@@ -5,6 +5,9 @@
 }
 
 .header {
+    
+    /* display: flex;
+    align-items: center; */
     background-color: #131313;
     height: 120px;
 }
@@ -35,6 +38,19 @@
     border: solid #131313 15px;
     border-radius: 50%;
 }
+.burger-menu  button{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+      cursor: pointer;
+
+}
+
+.burger-menu__button:focus {
+    box-shadow: none;
+}
 
 .burger-menu__button {
     display: none;
@@ -56,6 +72,7 @@
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    left: 0;
 }
   
   .burger-menu__lines {
@@ -261,7 +278,7 @@ h1 {
 .info-text {
     line-height: 36px;
     color: #fff;
-    width: 575px;
+    width: 560px;
 }
 
 .button-intro {
@@ -361,6 +378,7 @@ h1 {
 }
 
 .item-border {
+    display: flex;
     border-radius: 50%;
     border: 7px solid #e6e6e6;
 }
@@ -369,8 +387,9 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 241px;
-    height: 241px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     border: 7px solid;
     border-color: #d1d1d1;
@@ -673,21 +692,37 @@ aside {
 
 
 .about-beans {
-    background-color: #010103;
-    background-image: url(../media/images/special-things/arabica-cup.jpg);
+    /* position: relative;
+    background-color: #010103; */
+    background-image: linear-gradient(to right, black 70%, transparent), url(../media/images/special-things/arabica-cup.jpg);
     background-repeat: no-repeat;
     background-position: right;
+    background-size: contain;
+    /* overflow: hidden;
+    z-index:1; */ 
 }
+/* 
+.about-beans::before {
+    position: absolute;
+    content: url(../media/images/special-things/arabica-cup.jpg);
+    right: 0;
+    /* background-color:rgba(4, 0, 0, 0.5);
+    z-index: -1; */
 
-.about-beans::after {
+
+
+/* .about-beans::before {
+box-shadow: inset 2px 2px 2px 2px #1C6EA4, inset 11px 11px 2px 0px #2285C7, inset 20px 20px 2px 1px #289DEA, inset 29px 29px 2px 1px #57BBEA, 17px 5px 15px 5px rgba(0,0,0,0);
+z-index:10000;
+}
+} */
+
+
+/* .about-beans::after {
+    position: absolute;
     content: '';
-    display: block;
-    max-width: inherit;
-    max-height: inherit;
-    color: khaki;
-}
 
-
+}  */
 
 .wrapper-about {
     width: 80%;
@@ -762,8 +797,14 @@ aside {
     font-size: 34px;
     line-height: 1.76;
     color: #0a0a08;
-    text-align: center;
     margin: 4px 0 0 0;
+}
+
+
+.block-position-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .position-menu-item .name, .price {
@@ -795,8 +836,8 @@ aside {
 
 .fav-item .name-item {
     width: 100%;
-    position: absolute;
-    bottom: 45px;
+    position: relative;
+    bottom: 123px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -806,15 +847,18 @@ aside {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    background-color: #101311;
-    opacity: 0.8;
+    background-color: rgb(16 19 17 / 60%);
+    
 }
 
 .name-item .name-item-position {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 20px;
     font-family: "Economica-Regular", sans-serif;
     font-size: 34px;
     color: #c4c4c4;
-    opacity: 0.8;
     margin: 0;
 }
 
@@ -824,8 +868,7 @@ aside {
     position: absolute;
     left: 14px;
     bottom: 37px;
-    background-color: #faca36;
-    opacity: 0.6;
+    background-color:rgb(250 202 54 / 60%);
     border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1129,12 +1172,17 @@ aside {
 }
 
 .name-mail input {
-    width: 243px;
+    width: 50%;
     border: none;
     padding: 12px;
     background-color: #e8e8e8;
     letter-spacing: 0.2px;
     color: #bebebe;
+}
+
+.form-contact input, select, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #b4afaf;
 }
 
 .name-mail input:first-child {

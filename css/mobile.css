@@ -19,10 +19,14 @@
     }
 
     .logo {
-        display: none;
+        position: unset;
+        height: 100px;
+        width: 100px;
+        border: solid #131313 3px;
+        margin-top: 6px;   
     }
 
-    .name-mobile {
+    /* .name-mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -42,7 +46,7 @@
         object-fit: cover;
         border: solid 5px #131313;
     border-radius: 50%;
-    }
+    } */
 
     .wrapper-name {
         -webkit-box-pack: start;
@@ -341,7 +345,7 @@
         justify-content: left;
     }
     
-    .name-mobile {
+    /* .name-mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -361,7 +365,7 @@
         object-fit: cover;
         border: solid 5px #131313;
     border-radius: 50%;
-    }
+    } */
 
 
     .nav, .nav-buy {

@@ -849,7 +849,7 @@ z-index:10000;
     
 }
 
-.about-position {
+.fav-item .about-position {
     position: relative;
     bottom: 124px;
 }

@@ -836,8 +836,6 @@ z-index:10000;
 
 .fav-item .name-item {
     width: 100%;
-    position: relative;
-    bottom: 123px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -849,6 +847,11 @@ z-index:10000;
     text-align: center;
     background-color: rgb(16 19 17 / 60%);
     
+}
+
+.about-position {
+    position: relative;
+    bottom: 124px;
 }
 
 .name-item .name-item-position {
@@ -890,8 +893,6 @@ z-index:10000;
 }
 
 .cart-order {
-    position: absolute;
-    bottom: 0px;
     width: 100%;
     height: 45px;
     display: -webkit-box;

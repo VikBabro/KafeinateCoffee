@@ -476,7 +476,7 @@ aside {
 }
 
 .descr-like {
-    
+    padding-top: 10px;
     margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;

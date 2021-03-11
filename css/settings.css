@@ -875,7 +875,7 @@ z-index:10000;
     position: absolute;
     left: 14px;
     bottom: 90px;
-    background-color:rgb(250 202 54 / 60%);
+    background-color:rgb(250 202 54 / 0.5);
     border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
